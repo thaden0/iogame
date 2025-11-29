@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lane Clash</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.80.1/dist/phaser.min.js"></script>
+  </head>
+  <body>
+    <div id="ui">
+      <div id="announcement"></div>
+      <div id="class-select" class="panel hidden">
+        <h3>Pick a class</h3>
+        <div id="class-buttons"></div>
+      </div>
+      <div id="hud">
+        <span id="hud-team"></span>
+        <span id="hud-class"></span>
+        <span id="hud-health"></span>
+        <span id="hud-xp"></span>
+        <span id="hud-respawn"></span>
+        <span id="hud-wave"></span>
+      </div>
+    </div>
+    <div id="game"></div>
+    <script type="module" src="client.js"></script>
+  </body>
+</html>
